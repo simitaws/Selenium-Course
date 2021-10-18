@@ -11,7 +11,7 @@ public class FirstTest {
 
     @Test
     public void OpenBrowser()  {
-        WebDriver driver;
+/*        WebDriver driver;   */
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\SimitBhattacharyya\\OneDrive - iCatalyst Inc\\Desktop\\Selenium\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://3.144.243.162:8081/v1/docker");
