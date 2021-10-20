@@ -29,7 +29,7 @@ public class FirstTest {
 		  { 
 		  System.out.println("Success");
 		   System.out.println(testSample.getClass().getSimpleName());
-/*			  	  system.exit(0);  */
+			  	  system.exit(0);  
 		  }
 		  else
 		  { 
