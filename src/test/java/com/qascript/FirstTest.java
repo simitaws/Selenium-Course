@@ -26,9 +26,14 @@ public class FirstTest {
 		  if (testSample.equals(testString))
 		  { 
 		  System.out.println("Success");
-		   System.out.println(testSample.getClass().getSimpleName());}
+		   System.out.println(testSample.getClass().getSimpleName());
+		  system.exit(0);
+		  }
 		  else
-			System.out.println("Failure");
+		  { 
+			  System.out.println("Failure");
+			  system.exit(1);
+		  }
 		
 	}
 
