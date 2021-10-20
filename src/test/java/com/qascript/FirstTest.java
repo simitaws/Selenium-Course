@@ -17,7 +17,7 @@ public class FirstTest {
     public void OpenBrowser()  {
 /*        WebDriver driver;   */
 	    Console console = System.console();
-        System.setProperty("webdriver.chrome.driver", "/bin/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/bin/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://3.144.243.162:8081/v1/docker");
 /*		String testString = "Welcome to deployment in docker DOED TEST";  */
