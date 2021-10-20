@@ -18,10 +18,13 @@ public class FirstTest {
 /*        WebDriver driver;   */
 /*	    Console console = System.console();    */
         System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+	    ChromeOptions options = new ChromeOptions();
+	    options.addArguments("headless");
+	    options.addArguments("disable.gpu");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://3.144.243.162:8081/v1/docker");
 /*		String testString = "Welcome to deployment in docker DOED TEST";  */
-	         String testString = "index.htm"; 
+	         String testString = "index.html"; 
 		
 /*		String testSample =driver.findElement(By.tagName("h1")).getText(); */
 		String testSample =driver.findElement(By.tagName("body")).getText();
