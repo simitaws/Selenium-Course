@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 public class FirstTest {
  
         public static void main(String[] args) throws IOException, InterruptedException {
-                System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+                System.setProperty("webdriver.chrome.driver", "C:\\Users\\SimitBhattacharyya\\OneDrive - iCatalyst Inc\\Desktop\\Selenium\\chromedriver.exe");
                 ChromeOptions chromeOptions = new ChromeOptions();
                 chromeOptions.addArguments("--headless");
                 chromeOptions.addArguments("--no-sandbox");
