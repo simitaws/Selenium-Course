@@ -1,50 +1,31 @@
-package com.qascript;
 
-import org.junit.Assert;
-import org.junit.Test;
+import java.io.IOException;
+ 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.By;
-import java.util.*;
-import java.lang.*;
-import java.io.Console;
-
-public class FirstTest {
-
-
-    @Test
-    public void OpenBrowser()  {
-/*        WebDriver driver;   */
-/*	    Console console = System.console();    */
-        System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
-	    ChromeOptions options = new ChromeOptions();
-	    options.addArguments("headless");
-	    options.addArguments("disable.gpu");
-		WebDriver driver = new ChromeDriver();
-		driver.get("http://3.144.243.162:8081/v1/docker");
-/*		String testString = "Welcome to deployment in docker DOED TEST";  */
-	         String testString = "index.html"; 
-		
-/*		String testSample =driver.findElement(By.tagName("h1")).getText(); */
-		String testSample =driver.findElement(By.tagName("body")).getText();
- 	
-		System.out.println("Text= " +testSample);
-		  if (testSample.equals(testString))
-		  { 
-		  System.out.println("Success");
-		   System.out.println(testSample.getClass().getSimpleName());
-/*			  	  system.exit(0);    */
-		  }
-		  else
-		  { 
-			  System.out.println("Failure");
-/*			  system.exit(1);    */
-		  }
-		
-	}
-
-
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
+ 
+public class TecAdminSeleniumTest {
+ 
+        public static void main(String[] args) throws IOException, InterruptedException {
+                System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+                ChromeOptions chromeOptions = new ChromeOptions();
+                chromeOptions.addArguments("--headless");
+                chromeOptions.addArguments("--no-sandbox");
+ 
+                WebDriver driver = new ChromeDriver(chromeOptions);
+ 
+                driver.get("https://google.com");
+ 
+                Thread.sleep(1000);
+ 
+                if (driver.getPageSource().contains("I'm Feeling Lucky")) {
+                        System.out.println("Pass");
+                } else {
+                        System.out.println("Fail");
+                }
+                driver.quit();
+        }
 }
-
 
