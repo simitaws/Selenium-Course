@@ -9,7 +9,7 @@ import org.openqa.selenium.By;
  
 public class FirstTest {
  
-	public static void main(String[] args) {
+	 public void OpenBrowser() {
 		// TODO Auto-generated method stub
  
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\SimitBhattacharyya\\OneDrive - iCatalyst Inc\\Desktop\\Selenium\\chromedriver.exe");
