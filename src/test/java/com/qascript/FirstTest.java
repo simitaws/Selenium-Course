@@ -1,9 +1,5 @@
 package test.jenkins.selenium;
 import java.io.IOException;
- 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.chrome.ChromeDriver;
 /* import org.testng.annotations.Test;  */
 import org.openqa.selenium.By;
  
@@ -15,7 +11,7 @@ public class FirstTest {
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\SimitBhattacharyya\\OneDrive - iCatalyst Inc\\Desktop\\Selenium\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://3.144.243.162:8081/v1/docker");
-		String testString = "Welcome to deployment in docker DOED TEST"; 
+		String testString = "index.html"; 
 		
 /*		String testSample =driver.findElement(By.tagName("h1")).getText(); */
 		String testSample =driver.findElement(By.tagName("body")).getText();
