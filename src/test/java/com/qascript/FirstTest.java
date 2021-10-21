@@ -17,7 +17,7 @@ public class FirstTest {
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://3.144.243.162:8081/v1/docker");
 /*		String testString = "index.html";  */
-	         String testString = "index.htm"; 
+	         String testString = "index.html"; 
 		
 /*		String testSample =driver.findElement(By.tagName("h1")).getText(); */
 		String testSample =driver.findElement(By.tagName("body")).getText();
