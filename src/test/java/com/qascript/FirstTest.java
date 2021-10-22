@@ -13,7 +13,7 @@ public class FirstTest {
     @Test
     public void OpenBrowser()  {
 /*        WebDriver driver;   */
-        System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\SimitBhattacharyya\\OneDrive - iCatalyst Inc\\Desktop\\Selenium\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://18.219.96.155:8081/");
 		String testString = "Enter Name"; 
