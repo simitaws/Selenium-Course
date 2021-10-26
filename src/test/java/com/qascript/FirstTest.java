@@ -24,6 +24,7 @@ public class FirstTest {
 		String testSample =driver.findElement(By.tagName("h2")).getText();
 		String testSample1 =driver.findElement(By.tagName("h1")).getText();
 /*		String testSample =driver.findElement(By.tagName("body")).getText();  */
+	        err = "0";
  	
 /*                    TEST #1                                */
         	System.out.println("Text= " +testSample);
@@ -37,6 +38,7 @@ public class FirstTest {
 			{
 			System.out.println("Failure");
 /*			System.exit(1);     */
+			err = "1";
 			}    
 		  
 /*                    TEST #2                                 */
@@ -51,9 +53,10 @@ public class FirstTest {
 		   {
 		   System.out.println("Failure");
 /*		   System.exit(1);       */
+		   err = "1";
 		   } 
-                  err = "1";
-	          Assert.assertTrue(err.equals("1"));
+                 
+	          Assert.assertFalse(err.equals("1"));
 
 }}
 
