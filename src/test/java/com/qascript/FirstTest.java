@@ -16,7 +16,7 @@ public class FirstTest {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\SimitBhattacharyya\\OneDrive - iCatalyst Inc\\Desktop\\Selenium\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://18.219.96.155:8081/");
-		String testString = "Enter Nam"; 
+		String testString = "Enter Name"; 
 		String testString1 = "Enter Correspondence"; 
 	        String err;
 		
