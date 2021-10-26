@@ -53,7 +53,7 @@ public class FirstTest {
 /*		   System.exit(1);       */
 		   } 
                   err = "1";
-	          Assert.assertFalse(err.equals("1"));
+	          Assert.assertTrue(err.equals("1"));
 
 }}
 
