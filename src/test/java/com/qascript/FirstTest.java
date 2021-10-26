@@ -18,6 +18,7 @@ public class FirstTest {
 		driver.get("http://18.219.96.155:8081/");
 		String testString = "Enter Nam"; 
 		String testString1 = "Enter Correspondence"; 
+	        String err;
 		
 /*		String testSample =driver.findElement(By.tagName("h1")).getText(); */
 		String testSample =driver.findElement(By.tagName("h2")).getText();
@@ -51,7 +52,8 @@ public class FirstTest {
 		   System.out.println("Failure");
 /*		   System.exit(1);       */
 		   } 
-
+                  err = "1";
+	          Assert.assertTrue(error.equals("1"));
 
 }}
 
