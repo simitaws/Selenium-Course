@@ -17,7 +17,7 @@ public class FirstTest {
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://18.219.96.155:8081/");
 		String testString = "Enter Name"; 
-		String testString1 = "Enter Correspondence"; 
+		String testString1 = "Enter Correspondenc"; 
 	        String err;
 		
 /*		String testSample =driver.findElement(By.tagName("h1")).getText(); */
