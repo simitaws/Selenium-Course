@@ -15,7 +15,7 @@ public class FirstTest {
 /*        WebDriver driver;   */
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\SimitBhattacharyya\\OneDrive - iCatalyst Inc\\Desktop\\Selenium\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
-		driver.get("http://pipetest-env.eba-zp3jvfyn.us-east-2.elasticbeanstalk.com/");
+		driver.get("http://localhost:8082/");
 		String testString = "Enter Request"; 
 		String testString1 = "EPMR Process Manager"; 
 	        String err;
