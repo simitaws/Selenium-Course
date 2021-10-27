@@ -17,7 +17,7 @@ public class FirstTest {
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://pipetest-env.eba-zp3jvfyn.us-east-2.elasticbeanstalk.com/");
 		String testString = "Enter Correspondence"; 
-		String testString1 = "EPMR"; 
+		String testString1 = "EPMR Process Manager"; 
 	        String err;
 		
 /*		String testSample =driver.findElement(By.tagName("h1")).getText(); */
