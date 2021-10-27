@@ -16,8 +16,8 @@ public class FirstTest {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\SimitBhattacharyya\\OneDrive - iCatalyst Inc\\Desktop\\Selenium\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://pipetest-env.eba-zp3jvfyn.us-east-2.elasticbeanstalk.com/");
-		String testString = "Enter Name"; 
-		String testString1 = "Enter Correspondence"; 
+		String testString = "Enter Correspondence"; 
+		String testString1 = "EPMR"; 
 	        String err;
 		
 /*		String testSample =driver.findElement(By.tagName("h1")).getText(); */
