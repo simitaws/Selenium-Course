@@ -17,7 +17,7 @@ public class FirstTest {
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://localhost:8082/");
 		String testString = "Submit Request"; 
-		String testString1 = "EPMR Process Manager test"; 
+		String testString1 = "EPMR Process Manager"; 
 	        String err;
 		
 /*		String testSample =driver.findElement(By.tagName("h1")).getText(); */
